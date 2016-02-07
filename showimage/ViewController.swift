@@ -1,4 +1,4 @@
-//
+    //
 //  ViewController.swift
 //  showimage
 //
@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var swiftImage: UIImageView!
+    @IBOutlet weak var DisplayButton: UIButton!
+    @IBAction func ActionDisplayImage(sender: AnyObject) {
+        swiftImage.hidden = false;
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
